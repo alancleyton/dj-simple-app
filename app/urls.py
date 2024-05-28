@@ -15,8 +15,8 @@ Including another URLconf
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
 from django.contrib import admin
-from django.urls import path
-from django.http import HttpResponse, HttpRequest
+from django.urls import path, include
+from django.http import HttpResponse
 
 # Function-based view(FBV) example
 def example_view(request):
@@ -26,4 +26,5 @@ def example_view(request):
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('example/', example_view),
+    path('blog/', include('blog.urls'))
 ]
