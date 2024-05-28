@@ -16,7 +16,14 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+from django.http import HttpResponse, HttpRequest
+
+# Function-based view(FBV) example
+def example_view(request):
+    if request.method == 'GET':
+        return HttpResponse('Hello world')
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('example/', example_view),
 ]
