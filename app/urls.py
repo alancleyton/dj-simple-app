@@ -25,6 +25,6 @@ def example_view(request):
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('example/', example_view),
+    path('example/', example_view, name='example'),
     path('blog/', include('blog.urls'))
 ]
