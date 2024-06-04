@@ -1,6 +1,19 @@
-<nav>
-    <ul>
-        <li><a href="{% url 'example' %}">example</li>
-        <li><a href="{% url 'articles' %}">articles</li>
-    </ul>
+<nav class="navbar" role="navigation">
+  <ul class="navbar__items">
+    <li class="navbar__item">
+      <a class="navbar__link" href="/">
+        home
+      </a>
+    </li>
+    <li class="navbar__item">
+      <a class="navbar__link" href="{% url 'articles' %}">
+        articles
+      </a>
+    </li>
+    <li class="navbar__item">
+      <a class="navbar__link" href="{% url 'example' %}">
+        example
+      </a>
+    </li>
+  </ul>
 </nav>

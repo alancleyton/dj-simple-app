@@ -1,7 +1,8 @@
 :root {
   --dark: #333333;
+  --dark-light: #474747;
   --white: #ffffff;
-  --grey: #eaeaea;
+  --grey: #d3d3d3;
 }
 
 /* CSS reset */
@@ -29,4 +30,47 @@ body {
   font-optical-sizing: auto;
   font-weight: 500;
   font-style: normal;
+}
+
+ol, ul {
+  list-style: none;
+  margin: 0;
+}
+
+/* Page navigation */ 
+.navbar {
+  display: inline-block;
+  width: 100%;
+  background-color: var(--dark);
+  margin-bottom: 2.5rem;
+}
+
+.navbar__items {
+  display: flex;
+  align-items: center;
+  gap: 2.5rem;
+  width: 100%;
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+.navbar__item {
+  padding: 1.5rem 1rem;
+}
+
+.navbar__item:hover {
+  background-color: var(--dark-light);
+}
+
+.navbar__link {
+  color: var(--grey);
+  font-size: 1rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  text-decoration: none;
+  height: 100%;
+}
+
+.navbar__link:hover {
+  color: var(--white);
 }
