@@ -75,15 +75,33 @@ ol, ul {
   color: var(--white);
 }
 
-
-/* Articles */ 
-.articles {
+section {
   display: block;
-  padding: 2.5rem;
+  margin: 4rem auto 2rem;
   width: 100%;
   max-width: 1140px;
-  margin: 4rem auto 2rem;
+}
+
+h1 {
+  margin: 1rem 0;
+  font-size: 2.5rem;
+  font-weight: 600;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+/* Articles */
+.articles {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.article {
+  flex: 1 350px;
+  padding: 2rem 1rem;
   background-color: var(--white);
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-  border-radius: 8px;
+  border-radius: 4px;
 }

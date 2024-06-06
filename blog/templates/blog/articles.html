@@ -1,11 +1,14 @@
 {% extends "base.html" %}
 {% block content %}
-    <section class="articles">
-        <h2>Blog articles</h2>
-        {% include 'blog/partials/article.html' %}
-        {% include 'blog/partials/article.html' %}
-        {% include 'blog/partials/article.html' %}
-        {% include 'blog/partials/article.html' %}
-        {% include 'blog/partials/article.html' %}
+    <section>
+        <h1>Blog articles</h1>
+        <main class="articles">
+            {% include 'blog/partials/article.html' %}
+            {% include 'blog/partials/article.html' %}
+            {% include 'blog/partials/article.html' %}
+            {% include 'blog/partials/article.html' %}
+            {% include 'blog/partials/article.html' %}
+            {% include 'blog/partials/article.html' %}
+        </main>
     </section>
 {% endblock  %}
