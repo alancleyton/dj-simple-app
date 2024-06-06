@@ -1,6 +1,11 @@
 {% extends "base.html" %}
 {% block content %}
-    <div class="articles">
+    <section class="articles">
         <h2>Blog articles</h2>
-    </div>
+        {% include 'blog/partials/article.html' %}
+        {% include 'blog/partials/article.html' %}
+        {% include 'blog/partials/article.html' %}
+        {% include 'blog/partials/article.html' %}
+        {% include 'blog/partials/article.html' %}
+    </section>
 {% endblock  %}
