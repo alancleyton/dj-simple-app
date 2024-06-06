@@ -7,3 +7,9 @@ def articles(request: HttpRequest) -> HttpResponse:
         return HttpResponse(render(
                 request, 'blog/articles.html', 
                 { 'head_title': 'Blog - list of articles' }))
+
+def example(request: HttpRequest) -> HttpResponse:
+    if request.method == 'GET':
+        return HttpResponse(render(
+                request, 'blog/example.html', 
+                { 'head_title': 'Blog - example page' }))
