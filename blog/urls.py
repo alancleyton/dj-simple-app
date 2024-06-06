@@ -3,6 +3,7 @@ from blog import views
 
 # blog routes URLs
 urlpatterns = [
-    path('articles/', views.articles, name='articles'),
     path('example/', views.example, name='example'),
+    path('articles/', views.articles, name='articles'),
+    path('article/<int:id>', views.article, name='article')
 ]

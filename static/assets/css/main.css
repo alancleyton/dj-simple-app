@@ -110,3 +110,17 @@ h1 {
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   border-radius: 4px;
 }
+
+.article--full {
+  flex: none;
+  width: 100%;
+  max-width: 100%;
+}
+
+.article--full > p {
+  display: block;
+  text-align: center;
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
+}
