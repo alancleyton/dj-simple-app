@@ -5,5 +5,5 @@ from django.http import HttpRequest, HttpResponse
 def articles(request: HttpRequest) -> HttpResponse:
     if request.method == 'GET':
         return HttpResponse(render(
-                request, 'articles/index.html', 
+                request, 'blog/articles.html', 
                 { 'head_title': 'Blog - list of articles' }))
