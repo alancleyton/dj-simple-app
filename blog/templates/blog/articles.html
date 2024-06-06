@@ -3,12 +3,9 @@
     <section>
         <h1>Blog articles</h1>
         <main class="articles">
-            {% include 'blog/partials/article.html' %}
-            {% include 'blog/partials/article.html' %}
-            {% include 'blog/partials/article.html' %}
-            {% include 'blog/partials/article.html' %}
-            {% include 'blog/partials/article.html' %}
-            {% include 'blog/partials/article.html' %}
+            {% for post in posts %}
+                {% include 'blog/partials/article.html' %}
+            {% endfor %}
         </main>
     </section>
 {% endblock  %}
